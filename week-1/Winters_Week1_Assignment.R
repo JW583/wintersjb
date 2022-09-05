@@ -60,6 +60,21 @@ smart_wd <- function (repo, folder=NULL) {
 }
 write.csv(df.r, file = "Week1.csv")
 # Generate summary statistics of your data frame and copy them as text into your script under a new section heading.
+#Column1		Column2		Column3	
+
+#Mean	8	Mean	3	Mean	3.098666667
+#Standard Error	1.154700538	Standard Error	0.377964473	Standard Error	0.334542853
+#Median	8	Median	3	Median	3
+#Mode	#N/A	Mode	1	Mode	#N/A
+#Standard Deviation	4.472135955	Standard Deviation	1.463850109	Standard Deviation	1.295678899
+#Sample Variance	20	Sample Variance	2.142857143	Sample Variance	1.67878381
+#Kurtosis	-1.2	Kurtosis	-1.328205128	Kurtosis	-1.178000989
+#Skewness	-3.66E-17	Skewness	0	Skewness	-0.019481058
+#Range	14	Range	4	Range	4
+#Minimum	1	Minimum	1	Minimum	1
+#Maximum	15	Maximum	5	Maximum	5
+#Sum	120	Sum	45	Sum	46.48
+#15	15	15	15	15	15
 
 # Push your script and your .csv file to GitHub in a new "Week1" folder.
 
