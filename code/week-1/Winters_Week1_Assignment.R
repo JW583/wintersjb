@@ -38,12 +38,12 @@ p
 colnames(p) <- colnames(df.a)    
 rbind(df.a, p)
 
-df.r <- rbind(df.a, "p")
+df.r <- rbind(df.a, "p") #so close! the p should not be in quotes here, so it was read as a repeating text string rather than an object.
 df.r
-row.names(df.r) <- c(row.names(df.a[1:3,]),"p")
+row.names(df.r) <- c(row.names(df.a[1:3,]),"p") #Not sure what you were trying to do here but it didn't work.
 df.r
 # Export the data frame as a .csv file 
-setwd("C:/GitHub/R4Eco_2022/Week1")
+setwd("C:/GitHub/R4Eco_2022/Week1") #saving to the wrong location - this should be your personal repository not the class.
 getwd()
 smart_wd <- function (repo, folder=NULL) {
   if(missing(folder))
