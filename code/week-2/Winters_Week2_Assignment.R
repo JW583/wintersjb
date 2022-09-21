@@ -74,3 +74,6 @@ plot(df1$c ~ df1$a, xlab = "Quality", ylab = "Quantity", main = "The REAL Scatte
   # Name plots as Lastname_barplot or Lastname_scatterplot. Save them to your "plots" folder.
 setwd("C:/GitHub/wintersjb")
 dev.off()
+
+
+#Perfect!
