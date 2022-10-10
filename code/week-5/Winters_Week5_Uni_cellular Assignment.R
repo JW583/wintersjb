@@ -9,6 +9,7 @@
 
 # Based on these observations of your strain distributions, why did the authors use a Kruskal-Wallis test rather than ANOVA to compare the strains? (2 pts)
   #The authors most likely used a Kruskal-Wallis test rather than ANOVA when comparing the strains as Kurskal-Wallis is a more broad test that compares if possibilities are higher or lower than average, rather than ANOVA that tests specifically for if there is equality between values for a comparison.
+#K-W is based on ranks/median rather than mean and does not require a normal distribution.
 
 # Use the fitdist() and gofstat() functions to compare the poisson, negative binomial, and logistic distributions for:
   # (1) - The number of cells of progeny (data$Num.Cells.Progeny)
@@ -47,7 +48,7 @@ fit.nbinome <- fitdist(Time.col, distr = "nbinom")
     # This hypothesis does not need to be correct - it only needs to be ecologically rational based these two figures.
 
 
-
+#You didn't answer these questions!
 
 
 
