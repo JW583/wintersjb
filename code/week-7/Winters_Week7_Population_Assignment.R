@@ -60,6 +60,7 @@ matplot(out[,-1], type = "l", xlab = "time", ylab = "population")
 legend("topright", c("Limncalanus", "D.mendotae"), lty = c(1,2), col = c(1,2), box.lwd = 0)
 # What are the changes you've made to alpha, beta, gamma, and delta from the default values; and what do they say in a relative sense about the plankton data? (4 pts)
   #For alpha I made it 3, for beta .7, for gamma .3 and delta .9. As for the data this means that the starting population was big but then gradually shrinks overtime, due to high amounts of predation and lower than average population stability, leads to a gradual decrease in overall population, with predators following a stable cycle.
+#This is generally correct, but how does your explanation relate back to the changes you made to the coeffecients?
 # Are there other paramenter changes that could have created the same end result? (2 pts)
   # I could have increased beta, decreased delta, and slightly increase gamma to get a similar result.
 # Export your final L-V plot with a legend that includes the appropriate genus and/or species name as if the model results were the real plankton data, 
