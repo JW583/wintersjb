@@ -95,6 +95,7 @@ RsquareAdj(TrichopteraHabNoSpace.rda)
 
 #Part 2: What is your interpretation of the pattern for each group individually, and the two in comparison, based on their mobility? (5 points)
 #My interpretation based on the pattern for diptera and trichoptera individually is that there is a correlation to the amount of space they cover based on mobility, while together the data seems to show that there is a much higher correlation between the amount of space they cover based on mobility rather than the amount of habitat between both groups.
+#I think I understand what you are talking about, but where are the results to back it up! You don't identify what pattern you are talking about here or in part 1.
 
 #Part 3: For each of your chosen groups of bugs, perform variable selection for the habitat data rather than the AEM data. Which habitat variables are significant for each? (10 points)
   # Definitions for the habitat column names:
@@ -159,6 +160,10 @@ anova(TrichopteraHabNoSpace.rda, perm.max = 10000)
 RsquareAdj(TrichopteraHabNoSpace.rda)
 
 
+#Which habitat variables were important for each group?
+
 #Part 4: How do you expect selecting both the spatial and the habitat variables would change the results of the RDAs from Part 1 above? (5 points)
   #(You do not need to redo the RDAs, unless you *want* to.)
-#Based on my results, it seems that by including both habitat and spatial variables together that there is a much stronger correlation to the amount of space able to be traveled based on their mobility, while there is little to no significance in habitat as the most important factor seems to change between the diptera and the trichoptera, with no significance indicating habitat is as crucial. 
+#Based on my results, it seems that by including both habitat and spatial variables together that there is a much stronger correlation to the amount of space able to be traveled based on their mobility, while there is little to no significance in habitat as the most important factor seems to change between the diptera and the trichoptera, with no significance indicating habitat is as crucial.
+#This might be true, but it's tangential to the question. Without selecting variables for habitat, you are likely overfitting that part of the model.
+#So the "real" influence of space is likely much stronger than what you generated with the above models.
