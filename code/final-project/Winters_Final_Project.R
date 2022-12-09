@@ -7,6 +7,22 @@ head(walleye.local)
 water.quality <- read.csv("WB_WaterQuality.csv")
 head(water.quality)
 
+#Merge the data spatially instead:
+library(nngeo)
+
+#create spatial features from the data frames:
+walleye.local.sf <- st_as_sf(walleye.local,coords = c("lattitude", "longitude"))#They spelled latitude wrong - nice and confusing.
+water.quality.sf <- st_as_sf(water.quality, coords = c("lat","long"))
+
+#Merge them together by location
+matched = st_join(walleye.local.sf, water.quality.sf, join = nngeo::st_nn, maxdist = 5000, k = 1, progress = FALSE)
+
+head(matched)
+
+
+
+
+#I would scrap what you have below here.
 walleye.local.names <- paste(walleye.local$lattitude, walleye.local$longitude)
 walleye.local$names <- walleye.local.names
 walleye.local.means <- aggregate(x = walleye.local, by = list(walleye.local$names), FUN = "mean")
