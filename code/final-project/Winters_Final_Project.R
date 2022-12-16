@@ -109,6 +109,7 @@ plot(mod6$residuals)
 #Adjusted R squared summary of model 6
 summary(mod6)$adj.r.squared
 #with all these models in place, we can see based on the AIC score that model 6 is the best representation of the data, and that from model 6 we can see that just about every abiotic factor has equal importance in determining walleye location preference, with the exception here being temperature in the water during the seasons alone without the other factors has no overbearing correlation. showing while all have their own significance on the walleye population, its actually a combination of all 4 factors with the current season being the biggest contributing picture to the walleye population and their spread throughout lake erie, with spring into summer seasons being a much more important factor than summer into fall when discussing the walleye population preferences. 
+#Great job walking through these and commenting along the way!
 
 #barplot comparing the mean average of all important factors to each season showing which season has a greater factor in walleye success and disperal in lake erie 
 ggplot(data = walleye.water.qaulity, mapping = aes(x = season, y = ph.mean + turb.mean + chloro.mean + temp.mean, color=season)) + 
@@ -126,5 +127,7 @@ ggplot(data = walleye.water.qaulity, mapping = aes(x = turb.mean, y = tagnumber,
 ggplot(data = walleye.water.qaulity, mapping = aes(x = chloro.mean, y = tagnumber, color=season)) + 
   geom_point(stat="identity", fill="white") + theme_minimal()
 
+#I understand what you were going for here, but tagnumber probably made this more confusing. Boxplots by spring and autumn would probably have been a better way to display this info.
+#OK, scratch that...reading your paper now I get it. This is really cool! I think a point-line plot would be better than a boxplot. If you are interested in learning how do to that let me know.
 
 
